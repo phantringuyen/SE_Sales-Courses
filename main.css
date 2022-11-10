@@ -1,0 +1,22 @@
+#third-heading.third-heading{
+    color: #333;
+}
+
+#first-heading {
+    color: #333;
+    color: rgb(159, 6, 6);
+    font-size: 50px;
+}
+#second-heading {
+    color: chocolate;
+    font-size: 40px;
+}
+.third-heading{
+    color: darkcyan;
+    font-size: 30px;
+}
+
+h1{
+    text-align: center;
+    background-color: rgb(22, 108, 108);
+}
