@@ -1,29 +1,34 @@
-.box{
-    width: 10rem;
-    height: 10rem;
+.root{
+    font-size: 50px
+}
+
+.box::before{
+    content: "Hello"; /**/
+    color: aliceblue;
+    display: block; /*đưa thuộc tính của box là block*/
+    width: 50px;
+    height: 50px;
+    background-color:red;
+}
+.box::after{
+    content: "Goodbye"; /**/
+    color:darkgray;
+    display: block; /*đưa thuộc tính của box là block*/
+    width: 50px;
+    height: 50px;
+    background-color:blue;
+}
+/* chữ cái đầu tiên trong h1 */
+h1::first-letter{
+    /* font-size: var(font-size); */
+    font-size: 50px;
+}
+/* dòng đầu tiên của h1 */
+h1::first-line{
+    color: brown;
+}
+/* khi người dùng di chuột vào nhấn giữ kéo sẽ thay đổi */
+h1::selection{
+    color: aliceblue;
     background-color: blueviolet;
-}
-.box:active{
-    background-color: #333;
-}
-
-h1:hover{
-    color: #ff0000;
-}
-
-li:first-child{
-    color:greenyellow;
-}
-li:last-child{
-    color: crimson;
-}
-
-.button{
-    padding: 8px 16px;
-    color: #fff;
-    background-color: #f05123;
-    text-decoration: none;
-}
-.button:hover{
-    background-color: rgba(240, 81, 35, 0.8);
 }
